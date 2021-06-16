@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Let's Type me....</title>
+    <link rel="stylesheet" href="typing.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+<div class="mainBody">
+
+  <div class="startTyping">
+  <div class="startDiv">
+    <label for="setTime" id="setTimeLabel">Choose a Time:</label>
+
+  <select name="setTime" id="setTime">
+    <option value="60">1 min</option>
+    <option value="120">2 min</option>
+    <option value="300">5 min</option>
+    <option value="600">10 min</option>
+  </select>
+  <button type="button" name="button" id="startBtn1" onclick="startTyping()">Start</button>
+  <span id="warnSpn">WARNING :You are using Mobile Phone , Plz use physical keyboard to type</span>
+  </div>
+  </div>
+
+<div class="mainBody-col-1">
+  <label for="vol" id="range">Select font size :</label>
+    <input type="range" id="vol" name="vol" min="0" max="50" value="24">
+    <button onclick="setFont()" id="fontBtn">Set font size</button>
+    <button onclick="reloadPara()" id="reloadParaBtn">Reload Paragraph</button>
+</div>
+<div class="mainBody-col-2">
+
+
+
+  <div class="typeDiv">
+    <div class="dataContainer">
+      <span id="wpmSpn">Typing Speed 0 WPM</span>
+        <span id="timeSpn">Your Time :</span>
+    </div>
+    <p id="paragraph"> Type below display text..</p>
+    <input type="text" name="typeBox" id="typeBox" placeholder="type Here...">
+  </div>
+<div class="resultDiv" id="resultDiv">
+<span id="resultSpn">Your Final Result</span>
+<div class="showResult">
+<span id="accuracyResult">Accuracy : 90%</span>
+<span id="wpmResult"> Typing Speed: 45 wpm</span>
+<span id="timeResult"> time 1:00 Min</span>
+<span id="keyResult">wrong Key Stroke : 5</span>
+<span id="wordResult">Wrong words : 2</span>
+</div>
+<div class="worngDataContainer">
+<div class="worngKey" id="worngKey">
+Wrong Key Stroke:
+</div>
+<div class="worngWord" id="worngWord">
+Wrong Words:
+</div>
+</div>
+<button type="button" name="button" id="startBtn" onclick="restart()">Start</button>
+</div>
+
+</div>
+<div class="mainBody-col-3">
+</div>
+</div>
+<script type="text/javascript" src="typing.js">
+
+</script>
+
+  </body>
+</html>
